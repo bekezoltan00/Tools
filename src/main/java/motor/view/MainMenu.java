@@ -33,7 +33,6 @@ public class MainMenu extends JFrame {
         
         setTitle("Fénymotor párbaj");
         setSize(480, 270);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         setLocationRelativeTo(null);
         

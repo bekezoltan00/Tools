@@ -18,7 +18,7 @@ import labirintus.model.LabirintusModel;
 
 public class LabirintusView extends JFrame{
     private int size;
-    private JPanel panel;
+	private JPanel panel;
     private JButton[][] buttons;
     private LabirintusModel model;
     
@@ -27,14 +27,13 @@ public class LabirintusView extends JFrame{
         setTitle("Labirintus");
         setSize(10*size+200,10*size+200);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         panel = new JPanel();
         add(panel);
         
         JMenuBar menuBar = new JMenuBar();
         setJMenuBar(menuBar);
-        JMenu newGame = new JMenu("Ãšj jÃ¡tÃ©k");
+        JMenu newGame = new JMenu("Új játék");
         menuBar.add(newGame);
         
         JMenuItem x15 = new JMenuItem("15x15");
@@ -156,7 +155,7 @@ public class LabirintusView extends JFrame{
     }
     
     private void congratulate() {
-        JOptionPane.showMessageDialog(this, "GratulÃ¡lunk, Ã–n Nyert!");
+        JOptionPane.showMessageDialog(this, "Gratulálunk, Ön Nyert!");
         
     }
     
@@ -175,5 +174,13 @@ public class LabirintusView extends JFrame{
             }
         }
     }
+    
+    public int getViewSize() {
+		return size;
+	}
+
+	public JButton[][] getButtons() {
+		return buttons;
+	}
     
 }

@@ -40,6 +40,7 @@ public class LabirintusModel {
                 }
             }
         }
+        
         this.size=size;
         this.aktx=size-1;
         this.akty=0;
@@ -220,4 +221,8 @@ public class LabirintusModel {
     public boolean isOver(){
         return (aktx==0 && akty==size-1);
     }
+
+	public Field[][] getFields() {
+		return fields;
+	}
 }

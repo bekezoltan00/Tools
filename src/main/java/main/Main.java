@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import knight.Knight;
+import labirintus.LabirintusGame;
 import motor.Motor;
 
 public class Main extends JFrame{
@@ -30,7 +31,7 @@ public class Main extends JFrame{
         button1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton button2 = new JButton("Knight");
         button2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JButton button3 = new JButton("36x36");
+        JButton button3 = new JButton("Labyrinth");
         button3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton button4 = new JButton("4");
         button4.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -58,6 +59,12 @@ public class Main extends JFrame{
 			}
 		};
 		
+		final Runnable labyrinthRun = new Runnable() {
+			public void run() {
+				LabirintusGame.main(new String[0]);
+			}
+		};
+		
 		button1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Thread(motorRun).start();
@@ -67,6 +74,12 @@ public class Main extends JFrame{
 		button2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Thread(knightRun).start();
+			}
+		});
+		
+		button3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Thread(labyrinthRun).start();
 			}
 		});
         

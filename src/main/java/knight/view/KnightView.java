@@ -24,9 +24,9 @@ public class KnightView extends JFrame {
 	private JPanel panel;
 
 	public KnightView() {
-		setLocationRelativeTo(null);
 		setTitle("Knight");
 		setSize(400, 400);
+		setLocationRelativeTo(null);
 
 		panel = new JPanel();
 		panel.setLayout(new GridLayout(5, 5, 1, 1));
