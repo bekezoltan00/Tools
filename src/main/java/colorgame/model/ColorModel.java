@@ -3,10 +3,6 @@ package colorgame.model;
 import java.awt.Color;
 import java.util.Random;
 
-/**
- *
- * @author vorosgy
- */
 public class ColorModel {
     private Field[][] fields;
     private Color color1, color2;
@@ -27,16 +23,28 @@ public class ColorModel {
     
     public void action(int x, int y) {
         fields[x][y].change();
-        if(0<x) {
+        if(0 < x) {
             fields[x-1][y].change();
+            if(0 < y){
+                fields[x-1][y-1].change();
+            }
+            if(y < size-1){
+                fields[x-1][y+1].change();
+            }
         }
-        if(x<size-1) {
+        if(x < size-1) {
             fields[x+1][y].change();
+            if(0 < y){
+                fields[x+1][y-1].change();
+            }
+            if(y < size-1){
+                fields[x+1][y+1].change();
+            }
         }
-        if(0<y) {
+        if(0 < y) {
             fields[x][y-1].change();
         }
-        if(y<size-1) {
+        if(y < size-1) {
             fields[x][y+1].change();
         }
         

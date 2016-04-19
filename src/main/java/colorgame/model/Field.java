@@ -2,10 +2,6 @@ package colorgame.model;
 
 import java.util.Random;
 
-/**
- *
- * @author vorosgy
- */
 public class Field {
     private boolean state;
     

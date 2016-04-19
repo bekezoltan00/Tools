@@ -10,12 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-/**
- *
- * @author vorosgy
- */
 public class ColorView extends JFrame {
-    private static final int SIZE = 5;
+    private static final int SIZE = 9;
     private final JButton[][] buttons;
     private final ColorModel model;
     
@@ -40,7 +36,6 @@ public class ColorView extends JFrame {
                 final int x = i;
                 final int y = j;
                 button.addActionListener(new ActionListener() {
-                    @Override
                     public void actionPerformed(ActionEvent e) {
                         model.action(x, y);
                         colorButtons();
