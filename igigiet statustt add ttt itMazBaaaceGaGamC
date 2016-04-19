@@ -1,0 +1,48 @@
+[33mcommit 7ae3f4ba99b635600f358b5c632b8fad32cd155f[m
+Author: Beke Zoltán <Beke Zoltán>
+Date:   Mon Apr 18 17:28:13 2016 +0200
+
+    Labyrinth junit Tests
+
+[33mcommit e84714db680ee94a79f5162480aef1132b5249be[m
+Merge: 79427a0 2423072
+Author: Bgeri10 <bgeri10@gmail.com>
+Date:   Wed Apr 13 14:39:11 2016 +0200
+
+    labirintus added merged
+
+[33mcommit 79427a0af35e417e6ee0025e41c401dcbc20e48e[m
+Author: Bgeri10 <bgeri10@gmail.com>
+Date:   Wed Apr 13 14:35:47 2016 +0200
+
+    labirintus added
+
+[33mcommit 2423072ff27ae5cea830ab412c123da369c50680[m
+Author: Kristóf <Kristóf>
+Date:   Wed Apr 13 14:31:15 2016 +0200
+
+    LightMotors adding
+
+[33mcommit 52c1ef58783a39a7200e522cc262048607504b2a[m
+Author: Beke Zoltán <Beke Zoltán>
+Date:   Tue Apr 12 16:54:24 2016 +0200
+
+    Knight class implemented in Main.java.
+
+[33mcommit 5aa22c051fa8d81e59974b3a76661d60b8d53a95[m
+Author: Beke Zoltán <Beke Zoltán>
+Date:   Tue Apr 12 12:19:12 2016 +0200
+
+    Tests and previous games added to project.
+
+[33mcommit 0a6c6769a67573e99a76056c3d7d06401a3792c5[m
+Author: Beke Zoltán <Beke Zoltán>
+Date:   Mon Apr 11 23:00:32 2016 +0200
+
+    Start of an Era
+
+[33mcommit 3dc38c2a8bc25374da2503f3f9f371a4272ebb08[m
+Author: bekezoltan00 <bekezoltan00@inf.elte.hu>
+Date:   Mon Apr 11 22:55:49 2016 +0200
+
+    Initial commit
