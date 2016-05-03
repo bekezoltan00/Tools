@@ -12,7 +12,7 @@ public class MazeViewTest {
 	
 	@org.junit.Test (expected=ArrayIndexOutOfBoundsException.class)
 	public void catchArrayIndexOutOfBoundsException() {
-		int size=50;
+		int size=13;
 		MazeView maze = new MazeView();
 		assertEquals(maze.getButtons()[size].length,size);
 	}
