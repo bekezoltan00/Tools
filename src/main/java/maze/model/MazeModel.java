@@ -3,10 +3,6 @@ package maze.model;
 import java.awt.Color;
 import java.util.Random;
 
-/**
- *
- * @author shepy
- */
 public class MazeModel {
     private Field[][] fields;
     private Color color1, color2, color3;

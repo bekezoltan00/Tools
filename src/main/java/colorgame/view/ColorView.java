@@ -57,6 +57,14 @@ public class ColorView extends JFrame {
         }
     }
     
+    public JButton[][] getButtons(){
+    	return buttons;
+    }
+    
+    public int getViewSize(){
+    	return SIZE;
+    }
+    
     private void congratulate() {
         JOptionPane.showMessageDialog(this, "You won, congratulations!");
     }

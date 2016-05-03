@@ -18,10 +18,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JComboBox;
 
-/**
- *
- * @author shepy
- */
 public class MazeView extends JFrame implements KeyListener{
     private int currentX;
     private int currentY;
@@ -66,7 +62,7 @@ public class MazeView extends JFrame implements KeyListener{
         reset.addActionListener(ResbuttonListener);
         menu.add(reset);
         
-        JComboBox<Integer> combobox = new JComboBox<>();
+        JComboBox<Integer> combobox = new JComboBox<Integer>();
         combobox.setActionCommand("Combobox");
         combobox.addItem(13);
         combobox.addItem(17);
@@ -108,7 +104,6 @@ public class MazeView extends JFrame implements KeyListener{
     }
     
     private ActionListener ResbuttonListener = new ActionListener() {
-        @Override
         public void actionPerformed(ActionEvent action) {
             JButton b = (JButton)action.getSource();
             setupMap();
@@ -116,19 +111,16 @@ public class MazeView extends JFrame implements KeyListener{
     };
     
     private ActionListener ComboBoxListener = new ActionListener() {
-        @Override
         public void actionPerformed(ActionEvent action) {
             SIZE = (Integer)((JComboBox)action.getSource()).getSelectedItem();
             setupMap();
         }
     };
     
-    @Override
     public void keyTyped(KeyEvent ke) {
         
     }
 
-    @Override
     public void keyPressed(KeyEvent ke) {
         if (ke.getKeyCode() == KeyEvent.VK_LEFT){
             if(currentY > 0 && model.isWall(currentX, currentY-1) == false){
@@ -152,8 +144,19 @@ public class MazeView extends JFrame implements KeyListener{
         }
         refreshButtons();
     }
+    
+    public int getSizeOfMaze(){
+    	return SIZE;
+    }
+    
+    public Color getWallColor(){
+    	return Color.red;
+    }
+    
+    public JButton[][] getButtons() {
+		return buttons;
+	}
 
-    @Override
     public void keyReleased(KeyEvent ke) {
         
     }
@@ -178,4 +181,5 @@ public class MazeView extends JFrame implements KeyListener{
         JOptionPane.showMessageDialog(this, "Gratulálok, nyertél!");
         map.removeAll();
     }
+    
 }
