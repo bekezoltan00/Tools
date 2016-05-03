@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 public class ColorViewTest {
 	@org.junit.Test
 	public void correctContructorSetSize() {
-		int size=13;
+		int size=9;
 		ColorView color = new ColorView();
 		assertEquals(color.getViewSize(),size);
 	}
@@ -17,6 +17,6 @@ public class ColorViewTest {
 		for(int i=0; i< color.getButtons().length; i++){
 			arraySize += color.getButtons()[i].length;
 		}
-		assertEquals(arraySize, 25);
+		assertEquals(arraySize, 81);
 	}
 }
