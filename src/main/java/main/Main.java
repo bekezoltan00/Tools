@@ -35,11 +35,20 @@ public class Main extends JFrame{
         button3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton button4 = new JButton("4");
         button4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JButton button5 = new JButton("MazeRunner");
+        button4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JButton button6 = new JButton("ColorGame");
+        button4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JButton button7 = new JButton("Lightmotor");
+        button4.setAlignmentX(Component.CENTER_ALIGNMENT);
         
         panel.add(button1);
         panel.add(button2);
         panel.add(button3);
         panel.add(button4);
+        panel.add(button5);
+        panel.add(button6);
+        panel.add(button7);
         
         add(panel);
 		
@@ -65,6 +74,36 @@ public class Main extends JFrame{
 			}
 		};
 		
+		final Runnable mazeRun = new Runnable() {
+			public void run() {
+				try {
+					MazeDemo.main(new String[0]);
+				} catch (IOException e) {
+					System.out.println("An error occured while starting MazeRunner game!");
+				}
+			}
+		};
+		
+		final Runnable colorGameRun = new Runnable() {
+			public void run() {
+				try {
+					ColorGame.main(new String[0]);
+				} catch (IOException e) {
+					System.out.println("An error occured while starting ColorGame game!");
+				}
+			}
+		};
+		
+		final Runnable lightMotorsRun = new Runnable() {
+			public void run() {
+				try {
+					Lightmotors.main(new String[0]);
+				} catch (IOException e) {
+					System.out.println("An error occured while starting Lightmotor game!");
+				}
+			}
+		};
+		
 		button1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Thread(motorRun).start();
@@ -82,11 +121,28 @@ public class Main extends JFrame{
 				new Thread(labyrinthRun).start();
 			}
 		});
+		
+		button5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Thread(mazeRun).start();
+			}
+		});
+		
+		button6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Thread(colorGameRun).start();
+			}
+		});
+		
+		button7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new Thread(lightMotorsRun).start();
+			}
+		});
         
 	}
 
 	public static void main (String[] args) {
-		
 		Main main = new Main();
 		main.setVisible(true);
 	}
