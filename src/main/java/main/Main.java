@@ -36,14 +36,12 @@ public class Main extends JFrame{
         button2.setAlignmentX(Component.CENTER_ALIGNMENT);
         JButton button3 = new JButton("Labyrinth");
         button3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JButton button4 = new JButton("4");
+        JButton button4 = new JButton("MazeRunner");
         button4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JButton button5 = new JButton("MazeRunner");
-        button4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JButton button6 = new JButton("ColorGame");
-        button4.setAlignmentX(Component.CENTER_ALIGNMENT);
-        JButton button7 = new JButton("Lightmotor");
-        button4.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JButton button5 = new JButton("ColorGame");
+        button5.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JButton button6 = new JButton("Lightmotor");
+        button6.setAlignmentX(Component.CENTER_ALIGNMENT);
         
         panel.add(button1);
         panel.add(button2);
@@ -51,7 +49,6 @@ public class Main extends JFrame{
         panel.add(button4);
         panel.add(button5);
         panel.add(button6);
-        panel.add(button7);
         
         add(panel);
 		
@@ -113,19 +110,19 @@ public class Main extends JFrame{
 			}
 		});
 		
-		button5.addActionListener(new ActionListener() {
+		button4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Thread(mazeRun).start();
 			}
 		});
 		
-		button6.addActionListener(new ActionListener() {
+		button5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Thread(colorGameRun).start();
 			}
 		});
 		
-		button7.addActionListener(new ActionListener() {
+		button6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Thread(lightMotorsRun).start();
 			}
