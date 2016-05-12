@@ -13,6 +13,9 @@ import javax.swing.JPanel;
 import knight.Knight;
 import labirintus.LabirintusGame;
 import motor.Motor;
+import colorgame.ColorGame;
+import lightmotors.Lightmotors;
+import maze.MazeDemo;
 
 public class Main extends JFrame{
 	
@@ -76,31 +79,19 @@ public class Main extends JFrame{
 		
 		final Runnable mazeRun = new Runnable() {
 			public void run() {
-				try {
-					MazeDemo.main(new String[0]);
-				} catch (IOException e) {
-					System.out.println("An error occured while starting MazeRunner game!");
-				}
+				MazeDemo.main(new String[0]);
 			}
 		};
 		
 		final Runnable colorGameRun = new Runnable() {
 			public void run() {
-				try {
-					ColorGame.main(new String[0]);
-				} catch (IOException e) {
-					System.out.println("An error occured while starting ColorGame game!");
-				}
+				ColorGame.main(new String[0]);
 			}
 		};
 		
 		final Runnable lightMotorsRun = new Runnable() {
 			public void run() {
-				try {
-					Lightmotors.main(new String[0]);
-				} catch (IOException e) {
-					System.out.println("An error occured while starting Lightmotor game!");
-				}
+				Lightmotors.main(new String[0]);
 			}
 		};
 		

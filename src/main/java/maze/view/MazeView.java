@@ -40,7 +40,6 @@ public class MazeView extends JFrame implements KeyListener{
         setTitle("Labirintus játék");
         setLayout(new BorderLayout());
         setSize(650,750);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         menu = new JPanel();
         menu.setSize(new Dimension(650,40));

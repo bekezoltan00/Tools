@@ -51,7 +51,6 @@ public class LightMotorView extends JFrame implements KeyListener {
         model = new LightMotorModel();
         setTitle("LightMotors");
         setLocation(30, 30);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         addKeyListener(this);
 
         panel = new JPanel();

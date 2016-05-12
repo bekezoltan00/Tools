@@ -21,7 +21,6 @@ public class ColorView extends JFrame {
         setTitle("Color game");
         setSize(400, 400);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(SIZE, SIZE));
