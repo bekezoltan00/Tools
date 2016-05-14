@@ -14,13 +14,15 @@ Az Eclipse fejlesztőkörnyezet segítségével az elkészült programból egy J
 ###Tesztelés
 A tesztelésben az egyes osztályok néhány metódusának ellenőrzésére fektettük a hangsúlyt. Ezeket a fájlokat egy külön test nevű mappába helyeztük, aszerint csoportosítva, hogy melyik teszt, melyik osztályhoz tartozik. Több, eltérő tesztesetet kreáltunk. Néhány teszteset:
 * Tömb túlindexelés:
-  @org.junit.Test(expected=ArrayIndexOutOfBoundsException.class)
-   public void shouldReturnArrayIndexOutOfBoundsExceptionWhenOutOfButtonArray() {
-    KnightView kv = new KnightView();
-    assertEquals(kv.getButtons()[5][5].getBackground(), Color.WHITE);
-   }
+
+  @org.junit.Test(expected=ArrayIndexOutOfBoundsException.class)   
+   public void shouldReturnArrayIndexOutOfBoundsExceptionWhenOutOfButtonArray() {    
+    KnightView kv = new KnightView();     
+    assertEquals(kv.getButtons()[5][5].getBackground(), Color.WHITE);     
+   }    
    
 * Megfelelő mozgási irány:
+   
    @org.junit.Test   
    public void correctMovedUp(){   
     int size = 10;    
@@ -36,6 +38,7 @@ A tesztelésben az egyes osztályok néhány metódusának ellenőrzésére fekt
    }   
    
 * Korrekt mennyiségű gomb létrehozása:
+
    @org.junit.Test   
    public void correctSizeOfButtonsArray() {   
     ColorView color = new ColorView();    
