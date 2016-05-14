@@ -13,39 +13,39 @@ Az Eclipse fejlesztőkörnyezet segítségével az elkészült programból egy J
 
 ###Tesztelés
 A tesztelésben az egyes osztályok néhány metódusának ellenőrzésére fektettük a hangsúlyt. Ezeket a fájlokat egy külön test nevű mappába helyeztük, aszerint csoportosítva, hogy melyik teszt, melyik osztályhoz tartozik. Több, eltérő tesztesetet kreáltunk. Néhány teszteset:
-¨*Tömb túlindexelés:
-		@org.junit.Test(expected=ArrayIndexOutOfBoundsException.class)
-		public void shouldReturnArrayIndexOutOfBoundsExceptionWhenOutOfButtonArray() {
-			KnightView kv = new KnightView();
-			assertEquals(kv.getButtons()[5][5].getBackground(), Color.WHITE);
-		}
-	Megfelelő mozgási irány:
-		@org.junit.Test
-		public void correctMovedUp(){
-			int size = 10;
-			LabirintusModel lm = new LabirintusModel(size);
-			Field[][] fields = lm.getFields();
-			if(!fields[size-2][0].isWall()){
-				lm.moveUp();
-				assertEquals(lm.getColor(size-2, 0),Color.yellow);
-			}else{
-				lm.moveUp();
-				assertEquals(lm.getColor(size-2, 0),Color.gray);
-			}
-			
-		}
-	Korrekt mennyiségű gomb létrehozása:
-		@org.junit.Test
-		public void correctSizeOfButtonsArray() {
-			ColorView color = new ColorView();
-			int arraySize=0;
-			for(int i=0; i< color.getButtons().length; i++){
-				arraySize += color.getButtons()[i].length;
-			}
-			assertEquals(arraySize, 81);
-		}
-
-
+*Tömb túlindexelés:
+   @org.junit.Test(expected=ArrayIndexOutOfBoundsException.class)
+   public void shouldReturnArrayIndexOutOfBoundsExceptionWhenOutOfButtonArray() {
+    KnightView kv = new KnightView();
+    assertEquals(kv.getButtons()[5][5].getBackground(), Color.WHITE);
+   }
+*Megfelelő mozgási irány:
+   @org.junit.Test
+   public void correctMovedUp(){
+    int size = 10;
+   	LabirintusModel lm = new LabirintusModel(size);
+   	Field[][] fields = lm.getFields();
+	if(!fields[size-2][0].isWall()){
+	   lm.moveUp();
+	   assertEquals(lm.getColor(size-2, 0),Color.yellow);
+	}else{
+	   lm.moveUp();
+	   assertEquals(lm.getColor(size-2, 0),Color.gray);
+	}
+	      
+}         
+*Korrekt mennyiségű gomb létrehozása:
+   @org.junit.Test
+   public void correctSizeOfButtonsArray() {
+    ColorView color = new ColorView();
+    int arraySize=0;
+    for(int i=0; i< color.getButtons().length; i++){
+     arraySize += color.getButtons()[i].length;
+    }
+    assertEquals(arraySize, 81);
+   }
+	
+	
 ###Verziókezelés
 A beadandó feladatban verziókezelőnek a git-et válaszottuk, a hozzátartozó github.com-os felülettel. Feltelepítettük a git asztali változatát (asztali, parancssoros), majd git clone parancshívást követően lemásoltuk az általunk kiválasztott helyre. Ezután az alábbi parancsokat alkalmaztuk:
 	git status
