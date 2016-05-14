@@ -66,5 +66,5 @@ public void correctMovedUp(){
 * git status
 * git pull origin master
 * git add .
-* git commit -m <"A módosítás neve röviden">
+* git commit -m "*<A módosítás neve röviden>*"
 * git push origin master
