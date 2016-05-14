@@ -22,7 +22,7 @@ A tesztelésben az egyes osztályok néhány metódusának ellenőrzésére fekt
    }    
    
 * Megfelelő mozgási irány:
-   
+   ```java
    @org.junit.Test   
    public void correctMovedUp(){   
     int size = 10;    
@@ -35,7 +35,8 @@ A tesztelésben az egyes osztályok néhány metódusának ellenőrzésére fekt
 	   lm.moveUp();       
 	   assertEquals(lm.getColor(size-2, 0),Color.gray);       
 	}    
-   }   
+   } 
+   ```
    
 * Korrekt mennyiségű gomb létrehozása:
 
