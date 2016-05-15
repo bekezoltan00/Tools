@@ -8,7 +8,7 @@
 ---
 
 ###Kivitelezés
-> A beadandóban a következő feladatot valósítottuk meg: A régi már elkészített beadandóinkat felhasználva, létrehoztunk egy új projektet, amihez hozzáadtuk azokat. Minden beimportált alkalmazás után a csapat többi tagja a verziókezelő (git) segítségével letöltötte a számára újonnan feltöltött részeket, hogy elérhetővé váljon mindenki számára. Majd a különböző alkalmazások egybefésülése következett, egy új főosztályt hoztunk létre, ami a jelenlegi projektünk indítója. Itt jelenítjük meg az egyes játékok indítógombjait, amik külön ablakban tárulnak elénk, azok megnyomásának hatására. A program így készen áll a tesztelésre. 
+> A beadandóban a következő feladatot valósítottuk meg: A régebben készült programjainkat felhasználva, létrehoztunk egy új projektet, amihez hozzáadtuk azokat. Minden beimportált alkalmazás után a csapat többi tagja a verziókezelő (git) segítségével letöltötte a számára újonnan feltöltött részeket, hogy elérhetővé váljon mindenki számára. Majd a különböző alkalmazások egybefésülése következett, egy új főosztályt hoztunk létre, ami a jelenlegi projektünk indítója. Itt jelenítjük meg az egyes játékok indítógombjait, amik külön ablakban tárulnak elénk, azok megnyomásának hatására. A program így készen áll a tesztelésre. 
 Az Eclipse fejlesztőkörnyezet segítségével az elkészült programból egy Java dokumentációt generáltunk, ami szintén elérhető a projekt fájlai között.
 [Javadoc](doc/index.html)
 ![Fénymotor játék](img/gameMotors.png?raw=true "Fénymotorok")
